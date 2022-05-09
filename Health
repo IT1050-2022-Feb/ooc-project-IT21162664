@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+class Healthreport {
+   private:
+      char hrepNO[10];
+      
+   public:
+      Healthreport();
+      Healthreport(const char hrNO[]);
+      
+      void getreportdetails();
+      ~Healthreport(); 
+};
+
+Healthreport::Healthreport(){
+  strcpy(hrepNO, "");
+}
+
+Healthreport::Healthreport(const char hrNO[]){
+  strcpy(hrepNO,hrNO);
+}
+
+void Healthreport::getreportdetails(){
+
+}
+
+Healthreport::~Healthreport(){}
